@@ -1,0 +1,62 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/src/middleware.js"
+      ],
+      "name": "src/middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next|_vercel|.*\\..*|^$).*))(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/((?!api|_next|_vercel|.*\\..*|^$).*)"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "JyA9cY1eQBdIZ1EgSmAur",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Axy9hiT1uD1DD7z6dg16qAPU5s3oGMwybNwJ0uKYLY4=",
+        "__NEXT_PREVIEW_MODE_ID": "271678d0caf24137a02a5a861cc7877f",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "0561be35c35639c3166c8f8e99a94db72400b99d29e6ee66ac4e2a7b1dec2c97",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "f41f5bfda1ea24914e52045b6c5de4814157cd53f7549042fb4a1e3bfaeefe32"
+      }
+    }
+  },
+  "functions": {
+    "/api/mdx/[...path]/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/mdx/[...path]/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/mdx/[...path]/route.js"
+      ],
+      "name": "app/api/mdx/[...path]/route",
+      "page": "/api/mdx/[...path]/route",
+      "matchers": [
+        {
+          "regexp": "^/api/mdx/(?<path>.+?)$",
+          "originalSource": "/api/mdx/[...path]"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "JyA9cY1eQBdIZ1EgSmAur",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Axy9hiT1uD1DD7z6dg16qAPU5s3oGMwybNwJ0uKYLY4=",
+        "__NEXT_PREVIEW_MODE_ID": "271678d0caf24137a02a5a861cc7877f",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "0561be35c35639c3166c8f8e99a94db72400b99d29e6ee66ac4e2a7b1dec2c97",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "f41f5bfda1ea24914e52045b6c5de4814157cd53f7549042fb4a1e3bfaeefe32"
+      }
+    }
+  },
+  "sortedMiddleware": [
+    "/"
+  ]
+}

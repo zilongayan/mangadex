@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "random": "Aléatoire",
+    "series": "Séries",
+    "tags": "Tags",
+    "characters": "Personnages",
+    "artists": "Artistes",
+    "groups": "Groupes",
+    "about": "À propos",
+    "popular": "Populaire",
+    "recent": "Récent",
+    "search": "Recherche"
+  },
+  "age": {
+    "title": "Réservé aux adultes",
+    "desc": "Ce site contient du contenu pour adultes. Vous devez avoir 18+ pour continuer.",
+    "enter": "J’ai 18+",
+    "leave": "Quitter"
+  },
+  "auth": {
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "signup": "Inscription",
+    "email": "Email",
+    "password": "Mot de passe",
+    "favorites": "Favoris"
+  },
+  "home": {
+    "title": "Découvrez des galeries hentai",
+    "popular": "Populaire du moment",
+    "recent": "Ajouts récents"
+  },
+  "catalog": {
+    "empty": "Aucun élément trouvé",
+    "next": "Suivant",
+    "prev": "Précédent",
+    "page": "Page {page}",
+    "items": "{count} éléments"
+  },
+  "gallery": {
+    "readNow": "Lire maintenant",
+    "download": "Télécharger",
+    "share": "Partager",
+    "addToFavorites": "Ajouter aux favoris",
+    "removeFromFavorites": "Retirer des favoris",
+    "tags": "Tags",
+    "stats": {
+      "pages": "Pages",
+      "rating": "Note",
+      "views": "Vues",
+      "favorites": "Favoris"
+    },
+    "preview": "Aperçu de la galerie",
+    "related": "Galeries similaires",
+    "viewAll": "Voir tout",
+    "description": "Une galerie captivante présentant des illustrations époustouflantes et une narration captivante. Cette collection présente le meilleur du contenu avec des illustrations de haute qualité et des récits engageants qui vous divertiront pendant des heures.",
+    "copyLink": "Copier le lien",
+    "linkCopied": "Lien copié !",
+    "downloading": "Téléchargement...",
+    "downloadComplete": "Téléchargement terminé !",
+    "shareVia": "Partager via",
+    "comments": "Commentaires"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "confirm": "Confirmer"
+  }
+}
+
+
