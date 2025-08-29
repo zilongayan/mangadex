@@ -60,9 +60,7 @@ export type MangaDexListResponse<T> = {
 };
 
 // MangaDex API client
-const MANGADEX_API = process.env.NODE_ENV === 'development' 
-  ? '/api/mangadex' 
-  : 'https://api.mangadex.org';
+const MANGADEX_API = '/api/mangadex';
 const UPLOADS = 'https://uploads.mangadex.org';
 
 function getBaseUrl(): string {
