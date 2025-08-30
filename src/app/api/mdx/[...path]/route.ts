@@ -2,7 +2,7 @@ import type { NextRequest } from 'next/server';
 
 export const runtime = 'edge';
 
-const MANGADEX = 'https://api.mangadex.org';
+const MANGADEX = '/api/mangadex';
 
 function buildUrl(path: string, search: string) {
   const target = `${MANGADEX}/${path.replace(/^\//, '')}`;
