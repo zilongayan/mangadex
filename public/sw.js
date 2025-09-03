@@ -19,17 +19,31 @@ self.addEventListener('install', (event) => {
 
 // Fetch event - serve from cache when offline
 self.addEventListener('fetch', (event) => {
+  // Skip CORS requests to external APIs
+  if (event.request.url.includes('api.mangadex.org')) {
+    return; // Let the browser handle these requests normally
+  }
+
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
         // Return cached version or fetch from network
-        return response || fetch(event.request);
-      })
-      .catch(() => {
-        // Return offline page for navigation requests
-        if (event.request.mode === 'navigate') {
-          return caches.match('/');
+        if (response) {
+          return response;
         }
+        
+        return fetch(event.request).catch((error) => {
+          console.log('Fetch failed:', error);
+          // Return offline page for navigation requests
+          if (event.request.mode === 'navigate') {
+            return caches.match('/');
+          }
+          // For other requests, return a proper Response object
+          return new Response('Network error', { 
+            status: 503, 
+            statusText: 'Service Unavailable' 
+          });
+        });
       })
   );
 });

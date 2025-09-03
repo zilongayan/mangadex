@@ -121,6 +121,21 @@ export default async function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0B0C0F" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Optimized font preloads */}
+        <link 
+          rel="preload" 
+          href="/_next/static/media/geist-sans.woff2" 
+          as="font" 
+          type="font/woff2" 
+          crossOrigin="anonymous" 
+        />
+        <link 
+          rel="preload" 
+          href="/_next/static/media/geist-mono.woff2" 
+          as="font" 
+          type="font/woff2" 
+          crossOrigin="anonymous" 
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0B0C0F] text-[#E6E7EB]`}>
         <QueryProvider>
